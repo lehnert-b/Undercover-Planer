@@ -159,10 +159,6 @@
                        [style '(no-focus control-border)]
                        ))
 
-(send (send my-canvas get-dc) set-origin 200 200)
-(send (send my-canvas get-dc) set-scale 1.8 1.8)
-
-
 (define upper-thickn (new combo-field% [parent right-panel]
                           [label "Dicke &oberes Brett in [mm]"]
                           [init-value "18"]
@@ -242,3 +238,6 @@
 
 
 (send frame show #t)
+
+(send (send my-canvas get-dc) set-origin 200 200)
+(send (send my-canvas get-dc) set-scale 1.8 1.8)
